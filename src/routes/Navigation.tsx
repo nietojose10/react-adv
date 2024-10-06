@@ -18,6 +18,9 @@ export const Navigation = () => {
                     <li>
                         <NavLink to="/users" className={ ({ isActive }) => isActive ? 'nav-active' : '' }>Users</NavLink>
                     </li>
+                    <li>
+                        <NavLink to="/clients" className={ ({ isActive }) => isActive ? 'nav-active' : '' }>Clients</NavLink>
+                    </li>
                 </ul>
             </nav>
 
@@ -25,6 +28,7 @@ export const Navigation = () => {
                 <Route path="about" element={ <h1>About Page</h1> } ></Route>
                 <Route path="users" element={ <h1>Users Page</h1> } ></Route>
                 <Route path="home" element={ <h1>Home Page</h1> } ></Route>
+                <Route path="clients" element={ <h1>Clients Page</h1> } ></Route>
 
                 <Route path="/*" element={ <Navigate to="/home" replace /> } ></Route>
             </Routes>
